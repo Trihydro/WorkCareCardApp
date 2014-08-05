@@ -1,0 +1,60 @@
+<ion-view title="Vehicle Accident">
+<div class="bar bar-subheader bar-assertive">
+  		<h2 class="title">Injury/Vehicle/Property Damage</h2>
+</div>
+  <ion-content class="has-header has-subheader padding">    	
+    <div>
+        <div>
+        	<b>Immediate Care</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;" >
+        		<li ng-repeat="item in ImmediateCare">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+        <br/>
+        <div>
+        	<b>Initial Notifications</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in InitialNotifications">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+        <br/>
+        <div>
+        	<b>Notification, if medicat treatment needed</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in NotificationMedical">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+        <br/>
+        <div>
+        	<b>Complete Drug/Alcohol Testing</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in Testing">
+        			{{item.title}}
+        			<div style="padding-left: 10px;"> 
+        				{{item.sub1}} 
+        			</div>
+        			<div style="padding-left: 10px;">        				
+        				{{item.sub2}}          			     		
+        			</div>
+        		</li>        		
+        	</ol>	    
+        </div>
+        <br/>
+        <div>
+        	<b>Before Returning to Work</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in Reporting">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+    </div>
+  </ion-content>
+
+</ion-view>

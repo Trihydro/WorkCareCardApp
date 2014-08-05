@@ -1,0 +1,58 @@
+<ion-view title="Incident">
+<div class="bar bar-subheader bar-assertive">
+        <h2 class="title">Injury/Property Damage/Requires Reporting</h2>
+</div>
+  <ion-content class="has-header has-subheader padding">
+    <h4>
+    	Incident that results in injury, property damage and/or requires reporting
+    </h4>
+	<br/>
+    <div>
+        <div>
+        	<b>Immediate Care</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in ImmediateCare">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+        <br/>
+        <div>
+        	<b>Initial Notifications</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in InitialNotifications">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+        <br/>
+        <div>
+        	<b>Notification, if medicat treatment needed</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in NotificationMedical">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+        <br/>
+        <div>
+        	<b>Reporting</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in Reporting">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+        <br/>
+        <div>
+        	<b>Before Returning to Work</b>
+        	<ol style="list-style:lower-alpha; padding-left: 30px;">
+        		<li ng-repeat="item in Returning">
+        			{{item.title}}
+        		</li>
+        	</ol>	    
+        </div>
+    </div>
+	    
+  </ion-content>
+</ion-view>
